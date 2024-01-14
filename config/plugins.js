@@ -18,4 +18,17 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    provider: 'sendmail',
+    providerOptions: {
+      dkim: {
+        privateKey: env('DKIM_PRIVATE'),
+        keySelector: 'cname', // the same as the one set in DNS txt record, use online dns lookup tools to be sure that is retreivable
+      },
+    },
+    settings: {
+      defaultFrom: 'waterwaycomp@gmail.com',
+      defaultReplyTo: 'waterwaycomp@gmail.com',
+    },
+  },
 });
