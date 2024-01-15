@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "test_dirve_galleries",
+  "info": {
+    "singularName": "test-dirve-gallery",
+    "pluralName": "test-dirve-galleries",
+    "displayName": "Test Dirve Gallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
